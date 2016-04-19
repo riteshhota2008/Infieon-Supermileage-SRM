@@ -3,7 +3,7 @@
   $.fn.menumaker = function(options) {
       
       var cssmenu = $(this), settings = $.extend({
-        title: "Menu",
+        title: "Infieon Supermileage",
         format: "dropdown",
         sticky: false
       }, options);
@@ -64,7 +64,7 @@
 $(document).ready(function(){
 
 $("#cssmenu").menumaker({
-   title: "Menu",
+   title: "Infieon Supermileage",
    format: "multitoggle"
 });
 

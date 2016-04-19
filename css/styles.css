@@ -255,6 +255,7 @@
     border-top: 2px solid #dddddd;
     border-bottom: 2px solid #dddddd;
     content: '';
+    padding-top: 4px;
   }
   #cssmenu #menu-button:before {
     position: absolute;
@@ -277,6 +278,7 @@
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    padding-top: 1px;/*added*/
   }
   #cssmenu #menu-button.menu-opened:before {
     top: 23px;
@@ -339,5 +341,12 @@
   }
   #cssmenu .submenu-button.submenu-opened:before {
     display: none;
+  }
+
+  @media screen and (max-width:768px) {
+
+    #cssmenu>ul>li.none>a {
+      display: none
+    }
   }
 }
